@@ -1,0 +1,37 @@
+.timer_container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.timer_container .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    max-width: 9rem;
+    background-color: var(--timer-background);
+    border-radius: 1rem;
+}
+
+.timer_container .value {
+    font-family: var(--timer-font);
+    font-size: 4rem;
+    color: var(--timer-color);
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px var(--timer-color),
+    0 0 16px var(--timer-color);
+}
+
+.timer_container .label {
+    color: var(--timer-color);
+    font-family: var(--timer-font);
+    font-size: 1.1rem;
+}
