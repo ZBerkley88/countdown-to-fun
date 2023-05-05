@@ -1,0 +1,16 @@
+.number_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--timer-background);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid var(--timer-background);
+    transition: var(--transition);
+  }
+  
