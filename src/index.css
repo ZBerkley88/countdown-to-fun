@@ -5,8 +5,8 @@
   --black: #1E1E1E;
   --white: #FFFFFF;
 
-  --timer-background: #59469a;
-  --timer-color: #f8d92b;
+  --purple: #59469a;
+  --yellow: #f8d92b;
   --timer-font: "Tomorrow", sans-serif;
 
   --transition: all 400ms ease;
@@ -42,21 +42,13 @@ body {
   /* background-image: url(../src/assets/pngwing.com.png) */
 }
 
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-}
 
-h1 {
-  font-size: 2.5rem;
+.card_container, .btn_container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
 }
 
 section {

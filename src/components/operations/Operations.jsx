@@ -21,7 +21,7 @@ const Operations = () => {
       }
   }
   return (
-    <div className="button_container">
+    <div className="btn_container">
       <button className="operation_btn" onClick={() => handleClick("+")}>
         <FaPlus className="btn_icon" />
       </button>
