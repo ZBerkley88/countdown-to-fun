@@ -29,3 +29,17 @@
   transition: var(--transition);
 }
 
+.operation_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--purple);
+  border-radius: 50%;
+  margin: 0px 5px 0px 5px;
+  border: 5px solid var(--purple);
+  transition: var(--transition);
+}

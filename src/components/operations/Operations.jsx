@@ -20,6 +20,7 @@ const Operations = () => {
         setResult("Error");
       }
   }
+  
   return (
     <div className="btn_container">
       <button className="operation_btn" onClick={() => handleClick("+")}>
