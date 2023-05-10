@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaPlus, FaMinus, FaTimes, FaDivide } from "react-icons/fa";
 import "./numbers.css";
 
 const Numbers = () => {
@@ -8,7 +9,7 @@ const Numbers = () => {
   const [largeNumbers, setLargeNumbers] = useState([25, 50, 75, 100]);
   const [selectedNumbers, setSelectedNumbers] = useState([]);
 
-  //
+  // ================== NUMBER SELECTION ==================
   function handleSmallClick() {
     if (selectedNumbers.length >= 6) return;
     // prevent adding more than 6 cards
@@ -35,8 +36,28 @@ const Numbers = () => {
     setSelectedNumbers([...selectedNumbers, selectedNumber]);
   }
 
+  // ================== CALCULATOR ==================
+  const [result, setResult] = useState("");
+
+  function handleClick(value) {
+    setResult(result + value);
+  }
+
+  function handleClear() {
+    setResult("");
+  }
+
+  function handleEqual() {
+    try {
+      setResult(eval(result).toString());
+    } catch (error) {
+      setResult("Error");
+    }
+  }
+
   return (
     <div>
+      {/* ================== NUMBER SELECTION ================== */}
       <div className="card_container">
         <button className="select_btn" onClick={handleSmallClick}>
           Add a small number
@@ -45,12 +66,33 @@ const Numbers = () => {
           Add a large number
         </button>
       </div>
+
+      {/* ================== RESULT ================== */}
+      <div className="result_container">{result}</div>
+
+      {/* ================== SELETED NUMBERS ================== */}
       <div className="btn_container">
         {selectedNumbers.map((number, index) => (
           <div className="number_btn" key={index}>
             {number}
           </div>
         ))}
+      </div>
+
+      {/* ================== OPERATIONS ================== */}
+      <div className="btn_container">
+        <button className="operation_btn" onClick={() => handleClick("+")}>
+          <FaPlus className="btn_icon" />
+        </button>
+        <button className="operation_btn" onClick={() => handleClick("-")}>
+          <FaMinus />
+        </button>
+        <button className="operation_btn" onClick={() => handleClick("*")}>
+          <FaTimes />
+        </button>
+        <button className="operation_btn" onClick={() => handleClick("/")}>
+          <FaDivide />
+        </button>
       </div>
     </div>
   );

@@ -42,9 +42,7 @@ body {
   /* background-image: url(../src/assets/pngwing.com.png) */
 }
 
-
-
-.card_container, .btn_container {
+.card_container, .btn_container, .result_container {
   margin-bottom: 1.5rem;
   display: flex;
   height: 5rem;
