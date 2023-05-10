@@ -10,7 +10,6 @@ const Timer = () => {
 
   return (
     <div className="timer_container">
-      <h2>Timer</h2>
       <div className="content">
         <div className="box">
           <div className="value">

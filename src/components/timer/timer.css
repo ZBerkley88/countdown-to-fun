@@ -15,23 +15,23 @@
     justify-content: center;
     height: 12rem;
     max-width: 9rem;
-    background-color: var(--timer-background);
+    background-color: var(--purple);
     border-radius: 1rem;
 }
 
 .timer_container .value {
     font-family: var(--timer-font);
     font-size: 4rem;
-    color: var(--timer-color);
+    color: var(--yellow);
     text-shadow:
     0 0 1px #fff,
     0 0 2px #fff,
-    0 0 4px var(--timer-color),
-    0 0 16px var(--timer-color);
+    0 0 4px var(--yellow),
+    0 0 16px var(--yellow);
 }
 
 .timer_container .label {
-    color: var(--timer-color);
+    color: var(--yellow);
     font-family: var(--timer-font);
     font-size: 1.1rem;
 }

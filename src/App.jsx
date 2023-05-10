@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Timer />
+      {/* <Timer /> */}
       <Numbers />
       <Operations />
     </>
